@@ -100,6 +100,37 @@ The taxonomy has two levels: a **domain** (broad grouping) and **tags** within i
 
 When a user asks about a topic, the skill checks which tags match, then looks up those tags in `references/tutorial-map.md` (see [[tutorial-coverage-scoring]]) to find the highest-scoring tutorials to suggest. Tags also power future search/indexing if the wiki is ever queried externally.
 
+**Concrete examples (ingested tutorials):**
+
+| Tags | Tutorial page |
+|------|--------------|
+| `deployment`, `create`, `proxy`, `node` | [[deploy-app]] |
+| `pod`, `node`, `describe`, `logs`, `exec`, `debug` | [[explore-app]] |
+| `scale`, `replicaset`, `replicas`, `load-balancing` | [[scale-app]] |
+| `service`, `loadbalancer`, `external-ip`, `expose` | [[expose-external-ip]] |
+| `namespace`, `context`, `use-context`, `kubectl-config` | [[namespaces-walkthrough]] |
+| `service`, `nodeport`, `selector`, `labels`, `expose` | [[expose-app]] |
+| `rollout`, `rollback`, `rolling-update`, `set-image` | [[update-app]] |
+| `configmap`, `volume`, `exec`, `configuration` | [[configure-redis-configmap]] |
+| `port-forward`, `multi-tier`, `redis`, `dns` | [[guestbook]] |
+| `service`, `dns`, `coredns`, `endpointslice`, `tls`, `secret` | [[connect-applications-service]] |
+| `pod-security`, `namespace`, `pss`, `baseline`, `restricted` | [[ns-level-pss]] |
+| `configmap`, `volume`, `env-var`, `rollout`, `sidecar`, `immutable` | [[updating-configuration-via-a-configmap]] |
+| `sidecar`, `init-containers`, `restart-policy`, `jobs` | [[pod-sidecar-containers]] |
+| `statefulset`, `pvc`, `headless-service`, `partition`, `ordered` | [[basic-stateful-set]] |
+| `cassandra`, `statefulset`, `seed-provider`, `distributed` | [[cassandra]] |
+| `cluster`, `minikube`, `control-plane`, `node`, `kubelet` | [[create-cluster]] |
+| `kustomize`, `pvc`, `secret`, `recreate`, `wordpress`, `mysql` | [[mysql-wordpress-persistent-volume]] |
+| `termination`, `graceful-shutdown`, `endpointslice`, `prestop` | [[pods-and-endpoint-termination-flow]] |
+| `source-ip`, `nat`, `kube-proxy`, `external-traffic-policy` | [[source-ip]] |
+| `apparmor`, `security-context`, `linux`, `kernel`, `profile` | [[apparmor]] |
+| `seccomp`, `syscall`, `security-context`, `runtime-default`  | [[seccomp]] |
+| `swap`, `kubelet`, `kubeadm`, `linux`, `memory`, `node`      | [[provision-swap-memory]] |
+| `zookeeper`, `poddisruptionbudget`, `podantiaffinity`, `quorum` | [[zookeeper]] |
+| `pod-security`, `pss`, `cluster-level`, `admission-controller`, `kubeadm` | [[cluster-level-pss]] |
+| `kubelet`, `standalone`, `static-pod`, `cri-o`, `cni`, `systemd` | [[kubelet-standalone]] |
+| `dra`, `dynamic-resource-allocation`, `deviceclass`, `resourceclaim`, `cel` | [[install-use-dra]] |
+
 ## Sources
 
 - `docs/pr-notes.md` — tag list originally authored for csgdaa-skills PR #16

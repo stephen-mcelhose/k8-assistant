@@ -47,8 +47,8 @@ Ordered by Context Score (highest first — best return on first ingest):
 
 For each tutorial, the llm-wiki ingest operation should:
 
-1. `WebFetch` the tutorial URL
-2. Write the raw content to `docs/wiki/raw/tutorials/<slug>.md` (immutable after write)
+1. Run `python3 tools/extract.py <URL> <slug>` to fetch verbatim plain text into `docs/wiki/raw/tutorials/<slug>.md` (immutable after write). Do NOT use WebFetch — it summarises, it does not fetch.
+2. Read `docs/wiki/raw/tutorials/<slug>.md` in full before writing anything.
 3. Create a wiki page at `docs/wiki/<slug>.md` with:
    - OKF frontmatter (`type: concept`, `title`, `description`, `resource`, `tags`, `timestamp`)
    - 2–4 paragraph synthesis (what the tutorial teaches, what environment it assumes, what commands it exercises)
