@@ -9,3 +9,4 @@
 ## [2026-08-07] lint | 8 pages checked, 1 issue found, 1 fixed (missing cross-refs in kubernetes-topic-taxonomy.md); 4 forward-ref advisories noted (expose-app, scale-app, namespaces-walkthrough, expose-external-ip — pending ingest)
 ## [2026-08-07] ingest | Scale Up Your App (Tutorial #5) — https://kubernetes.io/docs/tutorials/kubernetes-basics/scale/scale-intro/
 ## [2026-08-07] lint | 9 pages checked, 0 issues, 0 fixed; [[scale-app]] forward-ref resolved; 4 forward-ref advisories remain (expose-app 5×, update-app 2×, namespaces-walkthrough 1×, expose-external-ip 1× — all Batch 2)
+## [2026-08-07] process | raw/ backfilled with verbatim extractions (deploy-app, explore-app, scale-app); extract.py + LICENSE-raw.md added; AGENTS.md updated with new ingest workflow; .gitattributes added
