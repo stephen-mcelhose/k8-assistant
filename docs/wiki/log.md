@@ -10,3 +10,5 @@
 ## [2026-08-07] ingest | Scale Up Your App (Tutorial #5) — https://kubernetes.io/docs/tutorials/kubernetes-basics/scale/scale-intro/
 ## [2026-08-07] lint | 9 pages checked, 0 issues, 0 fixed; [[scale-app]] forward-ref resolved; 4 forward-ref advisories remain (expose-app 5×, update-app 2×, namespaces-walkthrough 1×, expose-external-ip 1× — all Batch 2)
 ## [2026-08-07] process | raw/ backfilled with verbatim extractions (deploy-app, explore-app, scale-app); extract.py + LICENSE-raw.md added; AGENTS.md updated with new ingest workflow; .gitattributes added
+## [2026-08-07] ingest | expose-external-ip (#14, score 3.2) — LoadBalancer Service on cloud providers; propagated kubernetes-topic-taxonomy
+## [2026-08-07] ingest | batch 2 complete — namespaces-walkthrough (#23), expose-app (#4), update-app (#6), configure-redis-configmap (#8), guestbook (#15), connect-applications-service (#24); forward-refs [[expose-app]] and [[update-app]] resolved; taxonomy + index updated

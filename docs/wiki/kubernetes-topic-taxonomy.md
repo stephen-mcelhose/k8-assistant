@@ -107,6 +107,13 @@ When a user asks about a topic, the skill checks which tags match, then looks up
 | `deployment`, `create`, `proxy`, `node` | [[deploy-app]] |
 | `pod`, `node`, `describe`, `logs`, `exec`, `debug` | [[explore-app]] |
 | `scale`, `replicaset`, `replicas`, `load-balancing` | [[scale-app]] |
+| `service`, `loadbalancer`, `external-ip`, `expose` | [[expose-external-ip]] |
+| `namespace`, `context`, `use-context`, `kubectl-config` | [[namespaces-walkthrough]] |
+| `service`, `nodeport`, `selector`, `labels`, `expose` | [[expose-app]] |
+| `rollout`, `rollback`, `rolling-update`, `set-image` | [[update-app]] |
+| `configmap`, `volume`, `exec`, `configuration` | [[configure-redis-configmap]] |
+| `port-forward`, `multi-tier`, `redis`, `dns` | [[guestbook]] |
+| `service`, `dns`, `coredns`, `endpointslice`, `tls`, `secret` | [[connect-applications-service]] |
 
 ## Sources
 
