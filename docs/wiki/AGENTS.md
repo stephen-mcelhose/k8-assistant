@@ -31,6 +31,30 @@ Run these via the `llm-wiki` skill from within `~/repos/k8-assistant`:
 - `query <question>` — synthesize an answer from wiki pages, optionally write back
 - `lint` — audit for orphans, contradictions, stale claims, missing links
 
+## Ingest workflow (tutorial batch ingestion)
+
+For each tutorial ingest from `docs/wiki/tutorial-sync-plan.md`, follow this sequence:
+
+1. `WebFetch` the tutorial URL
+2. Discuss key takeaways (in chat) before writing anything
+3. Write raw source to `docs/wiki/raw/tutorials/<slug>.md` (immutable)
+4. Write wiki page to `docs/wiki/<slug>.md` with OKF frontmatter, synthesis, Key Commands, Prerequisites, Cross-references, Sources
+5. Propagate — update any existing pages that cover the same topics (add wikilinks, new sections, updated claims)
+6. Update `index.md` (new row) and append to `log.md`
+7. **Lint** — run a full lint pass immediately after each ingest:
+   - Check OKF frontmatter on all pages
+   - Check index.md has every page
+   - Check for orphans (no inbound wikilinks)
+   - Check for missing cross-references to newly ingested page
+   - Note forward-refs (wikilinks to not-yet-ingested pages) as ADVISORY — do not remove them
+   - Fix real issues; append lint entry to `log.md`
+8. Confirm with user before moving to the next tutorial
+9. Commit after each full batch completes
+
+### Forward-ref policy
+
+Wikilinks to tutorials not yet ingested (e.g., `[[scale-app]]` before Tutorial #5 is ingested) are **expected and correct**. Flag them in the lint report as *"pending ingest"* — never remove or stub them out. They will resolve naturally as ingestion progresses.
+
 ## Raw Sources
 
 Raw source files live in `docs/wiki/raw/`. They are immutable — the LLM reads them but never writes to them.

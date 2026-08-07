@@ -34,13 +34,13 @@ Context Score = (Quick Ref Coverage × Tutorial Quality × (6 - Task Difficulty)
 | 1.5–2.4     | 9         | Moderate — learner will need to go beyond the ref |
 | 0.5–1.4     | 5         | Advanced — minimal reference support available    |
 
-Top-scoring tutorials (score ≥ 3.5): **Deploy an App** (4.0), **Explore Your App** (4.0), **Scale Up Your App** (4.0), **Namespaces Walkthrough** (3.2), **Exposing External IP** (3.2).
+Top-scoring tutorials (score ≥ 3.5): **[[deploy-app|Deploy an App]]** (4.0), **[[explore-app|Explore Your App]]** (4.0), **[[scale-app|Scale Up Your App]]** (4.0), **[[namespaces-walkthrough|Namespaces Walkthrough]]** (3.2), **[[expose-external-ip|Exposing External IP]]** (3.2).
 
 ## How the skill uses this
 
 In `## Objective Setting`, the skill reads `references/tutorial-map.md` and finds the module with the highest Context Score that also matches the tags from the user's question (see [[kubernetes-topic-taxonomy]]). High-scoring tutorials are preferred as starting points; lower-scoring ones are suggested once the learner has built more context.
 
-This is intentional sequencing: beginners land on Deploy/Explore/Scale first (score 4.0), then progress toward StatefulSets, security hardening, and DRA as their reference knowledge grows.
+This is intentional sequencing: beginners land on [[deploy-app|Deploy]], [[explore-app|Explore]], and [[scale-app|Scale]] first (score 4.0), then progress toward StatefulSets, security hardening, and DRA as their reference knowledge grows.
 
 ## Limitations
 

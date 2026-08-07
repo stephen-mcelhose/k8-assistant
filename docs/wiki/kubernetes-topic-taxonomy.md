@@ -100,6 +100,14 @@ The taxonomy has two levels: a **domain** (broad grouping) and **tags** within i
 
 When a user asks about a topic, the skill checks which tags match, then looks up those tags in `references/tutorial-map.md` (see [[tutorial-coverage-scoring]]) to find the highest-scoring tutorials to suggest. Tags also power future search/indexing if the wiki is ever queried externally.
 
+**Concrete examples (ingested tutorials):**
+
+| Tags | Tutorial page |
+|------|--------------|
+| `deployment`, `create`, `proxy`, `node` | [[deploy-app]] |
+| `pod`, `node`, `describe`, `logs`, `exec`, `debug` | [[explore-app]] |
+| `scale`, `replicaset`, `replicas`, `load-balancing` | [[scale-app]] |
+
 ## Sources
 
 - `docs/pr-notes.md` — tag list originally authored for csgdaa-skills PR #16
