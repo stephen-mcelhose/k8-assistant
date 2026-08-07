@@ -18,3 +18,8 @@
 | [[configure-redis-configmap]]                             | Mount a ConfigMap as a volume file; why Pod restart is required for config changes to take effect | configmap, volume, exec, configuration   |
 | [[guestbook]]                                             | Multi-tier app: Redis leader/followers + PHP frontend using DNS discovery and port-forward        | port-forward, redis, multi-tier, dns      |
 | [[connect-applications-service]]                          | Service networking deep dive: ClusterIP, EndpointSlices, env var vs DNS discovery, TLS, LoadBalancer | service, dns, coredns, tls, secret    |
+| [[ns-level-pss]]                                          | Enforce/warn/audit Pod Security Standards per namespace via labels; baseline vs restricted levels     | pod-security, namespace, pss, kind    |
+| [[updating-configuration-via-a-configmap]]                | Four ConfigMap update patterns: volume (auto), env var (rollout required), multi-container, immutable | configmap, rollout, sidecar, immutable |
+| [[pod-sidecar-containers]]                                | Native sidecar containers (initContainer + restartPolicy:Always); adoption guide and webhook pitfalls | sidecar, init-containers, jobs        |
+| [[basic-stateful-set]]                                    | StatefulSet full lifecycle: stable identity, ordered ops, PVC persistence, partitioned rolling update | statefulset, pvc, headless-service    |
+| [[cassandra]]                                             | 3-node Cassandra ring via StatefulSet; custom seed provider; nodetool validation; PVC cleanup         | cassandra, statefulset, distributed   |

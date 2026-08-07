@@ -114,6 +114,11 @@ When a user asks about a topic, the skill checks which tags match, then looks up
 | `configmap`, `volume`, `exec`, `configuration` | [[configure-redis-configmap]] |
 | `port-forward`, `multi-tier`, `redis`, `dns` | [[guestbook]] |
 | `service`, `dns`, `coredns`, `endpointslice`, `tls`, `secret` | [[connect-applications-service]] |
+| `pod-security`, `namespace`, `pss`, `baseline`, `restricted` | [[ns-level-pss]] |
+| `configmap`, `volume`, `env-var`, `rollout`, `sidecar`, `immutable` | [[updating-configuration-via-a-configmap]] |
+| `sidecar`, `init-containers`, `restart-policy`, `jobs` | [[pod-sidecar-containers]] |
+| `statefulset`, `pvc`, `headless-service`, `partition`, `ordered` | [[basic-stateful-set]] |
+| `cassandra`, `statefulset`, `seed-provider`, `distributed` | [[cassandra]] |
 
 ## Sources
 

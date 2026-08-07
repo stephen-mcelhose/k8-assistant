@@ -12,3 +12,4 @@
 ## [2026-08-07] process | raw/ backfilled with verbatim extractions (deploy-app, explore-app, scale-app); extract.py + LICENSE-raw.md added; AGENTS.md updated with new ingest workflow; .gitattributes added
 ## [2026-08-07] ingest | expose-external-ip (#14, score 3.2) — LoadBalancer Service on cloud providers; propagated kubernetes-topic-taxonomy
 ## [2026-08-07] ingest | batch 2 complete — namespaces-walkthrough (#23), expose-app (#4), update-app (#6), configure-redis-configmap (#8), guestbook (#15), connect-applications-service (#24); forward-refs [[expose-app]] and [[update-app]] resolved; taxonomy + index updated
+## [2026-08-07] ingest | batch 3 complete — ns-level-pss (#11), updating-configuration-via-a-configmap (#7), pod-sidecar-containers (#9), basic-stateful-set (#16), cassandra (#18); taxonomy + index updated
