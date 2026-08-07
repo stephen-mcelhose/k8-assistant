@@ -14,7 +14,7 @@ Output:
     docs/wiki/raw/tutorials/<slug>.md
 
 The script:
-  1. curl-fetches the URL
+  1. Fetches the URL (urllib.request — no external dependencies)
   2. Extracts the <main data-pagefind-body> element
   3. Strips script/style/feedback blocks, then all remaining HTML tags
   4. Normalises whitespace
@@ -24,20 +24,16 @@ The resulting file is immutable — do not edit after creation.
 """
 
 import re
-import subprocess
 import sys
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
 
 def fetch_html(url: str) -> str:
-    result = subprocess.run(
-        ["curl", "-s", "-L", "--max-time", "30", url],
-        capture_output=True, text=True, encoding="utf-8", errors="replace"
-    )
-    if result.returncode != 0:
-        raise RuntimeError(f"curl failed: {result.stderr}")
-    return result.stdout
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return resp.read().decode("utf-8", errors="replace")
 
 
 def extract_main(html: str) -> str:
