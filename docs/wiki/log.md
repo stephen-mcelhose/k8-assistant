@@ -15,3 +15,4 @@
 ## [2026-08-07] ingest | batch 3 complete — ns-level-pss (#11), updating-configuration-via-a-configmap (#7), pod-sidecar-containers (#9), basic-stateful-set (#16), cassandra (#18); taxonomy + index updated
 ## [2026-08-07] ingest | batch 4 complete — create-cluster (#1), mysql-wordpress-persistent-volume (#17), pods-and-endpoint-termination-flow (#26), source-ip (#25); taxonomy + index updated
 ## [2026-08-07] ingest | batch 5 complete — apparmor (#12), seccomp (#13), provision-swap-memory (#21), zookeeper (#19); taxonomy + index updated
+## [2026-08-07] ingest | batch 6 complete — cluster-level-pss (#10), kubelet-standalone (#20), install-use-dra (#22); taxonomy + index updated; ALL 26 tutorials ingested

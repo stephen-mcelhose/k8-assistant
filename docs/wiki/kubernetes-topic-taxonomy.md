@@ -127,6 +127,9 @@ When a user asks about a topic, the skill checks which tags match, then looks up
 | `seccomp`, `syscall`, `security-context`, `runtime-default`  | [[seccomp]] |
 | `swap`, `kubelet`, `kubeadm`, `linux`, `memory`, `node`      | [[provision-swap-memory]] |
 | `zookeeper`, `poddisruptionbudget`, `podantiaffinity`, `quorum` | [[zookeeper]] |
+| `pod-security`, `pss`, `cluster-level`, `admission-controller`, `kubeadm` | [[cluster-level-pss]] |
+| `kubelet`, `standalone`, `static-pod`, `cri-o`, `cni`, `systemd` | [[kubelet-standalone]] |
+| `dra`, `dynamic-resource-allocation`, `deviceclass`, `resourceclaim`, `cel` | [[install-use-dra]] |
 
 ## Sources
 

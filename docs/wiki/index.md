@@ -31,3 +31,6 @@
 | [[seccomp]]                                               | seccomp profiles via kind extraMounts; audit→violation→fine-grained progression; RuntimeDefault default | seccomp, syscall, kind, linux         |
 | [[provision-swap-memory]]                                 | Encrypted/unencrypted swap on Linux nodes; kubelet LimitedSwap config; boot persistence via systemd   | swap, kubelet, kubeadm, memory        |
 | [[zookeeper]]                                             | 3-node ZooKeeper ensemble; PodAntiAffinity + PDB for quorum safety; liveness probes; cordon/drain     | zookeeper, pdb, podantiaffinity       |
+| [[cluster-level-pss]]                                     | Cluster-wide PSS via AdmissionConfiguration; kube-system exemption; dry-run assessment; kind          | pod-security, cluster-level, kubeadm  |
+| [[kubelet-standalone]]                                    | Kubelet without control plane; CRI-O + CNI install; staticPodPath; local kubelet API                  | kubelet, standalone, static-pod, cni  |
+| [[install-use-dra]]                                       | DRA stable v1.35; DeviceClass + ResourceClaim + CEL; driver DaemonSet; allocate/deallocate lifecycle  | dra, deviceclass, resourceclaim, cel  |
