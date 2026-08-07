@@ -2,7 +2,7 @@
 type: concept
 title: Kubernetes Topic Taxonomy
 description: Canonical two-level tag vocabulary covering ~200 Kubernetes concepts across 25 domains, used for tutorial matching and indexing within the k8s-assistant skill.
-resource: docs/pr-notes.md
+resource: docs/wiki/raw/manual/tag-taxonomy.md
 tags: [taxonomy, kubectl, kubernetes, indexing, tags]
 timestamp: 2026-08-07T15:39:38Z
 ---
@@ -96,6 +96,15 @@ The taxonomy has two levels: a **domain** (broad grouping) and **tags** within i
 ### Automation & Tooling
 `script` `automation` `plugin` `completion` `bash` `zsh` `fish`
 
+### Application Examples — Stateless
+`guestbook` `frontend` `backend` `tier` `role`
+
+### Application Examples — Stateful
+`redis` `redis-cli` `cassandra` `nodetool` `seed` `ring` `zookeeper` `zkCli` `quorum` `ensemble` `consensus` `zab` `leader-election` `myid` `ruok` `wordpress` `mysql` `follower` `leader` `podantiaffinity`
+
+### Testing & Utilities
+`curl` `wget` `nslookup` `ssh` `localhost` `annotation` `resource-type`
+
 ## How it's used
 
 When a user asks about a topic, the skill checks which tags match, then looks up those tags in `references/tutorial-map.md` (see [[tutorial-coverage-scoring]]) to find the highest-scoring tutorials to suggest. Tags also power future search/indexing if the wiki is ever queried externally.
@@ -130,8 +139,9 @@ When a user asks about a topic, the skill checks which tags match, then looks up
 | `pod-security`, `pss`, `cluster-level`, `admission-controller`, `kubeadm` | [[cluster-level-pss]] |
 | `kubelet`, `standalone`, `static-pod`, `cri-o`, `cni`, `systemd` | [[kubelet-standalone]] |
 | `dra`, `dynamic-resource-allocation`, `deviceclass`, `resourceclaim`, `cel` | [[install-use-dra]] |
+| `kubectl`, `reference`, `jsonpath`, `output-format`, `patch`, `verbosity`   | [[kubectl-quick-reference]] |
 
 ## Sources
 
-- `docs/pr-notes.md` — tag list originally authored for csgdaa-skills PR #16
+- `docs/wiki/raw/manual/tag-taxonomy.md` — tag list originally authored for csgdaa-skills PR #16, ingested 2026-08-07
 - `references/tutorial-map.md` — tag column per tutorial

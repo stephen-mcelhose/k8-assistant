@@ -34,3 +34,4 @@
 | [[cluster-level-pss]]                                     | Cluster-wide PSS via AdmissionConfiguration; kube-system exemption; dry-run assessment; kind          | pod-security, cluster-level, kubeadm  |
 | [[kubelet-standalone]]                                    | Kubelet without control plane; CRI-O + CNI install; staticPodPath; local kubelet API                  | kubelet, standalone, static-pod, cni  |
 | [[install-use-dra]]                                       | DRA stable v1.35; DeviceClass + ResourceClaim + CEL; driver DaemonSet; allocate/deallocate lifecycle  | dra, deviceclass, resourceclaim, cel  |
+| [[kubectl-quick-reference]]                               | Official kubectl cheat sheet: autocomplete, context, jsonpath, patch, rollout, debug, output formats   | kubectl, reference, jsonpath, patch   |
