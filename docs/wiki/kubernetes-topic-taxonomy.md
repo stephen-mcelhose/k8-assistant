@@ -143,5 +143,5 @@ When a user asks about a topic, the skill checks which tags match, then looks up
 
 ## Sources
 
-- `docs/wiki/raw/manual/tag-taxonomy.md` — tag list originally authored for csgdaa-skills PR #16, ingested 2026-08-07
+- `docs/wiki/raw/manual/tag-taxonomy.md` — manually authored tag taxonomy, ingested 2026-08-07
 - `references/tutorial-map.md` — tag column per tutorial

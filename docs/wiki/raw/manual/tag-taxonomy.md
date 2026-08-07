@@ -1,11 +1,9 @@
 <!--
-  Source : https://github.com/bayer-int/csgdaa-skills/pull/16#issuecomment-3762777148
-  Author : stephen.mcelhose.ext
-  Date   : 2026-01-14 (comment); ingested 2026-08-07
+  Source : manually authored by project owner
+  Date   : 2026-01-14; ingested 2026-08-07
   Note   : Manually authored tag taxonomy covering all 26 k8s tutorial topics.
            Organised into 30 thematic categories. Used as authoritative tag reference
            for kubernetes-topic-taxonomy.md and wiki page frontmatter.
-  Do NOT edit. Re-fetch from source if updates are needed.
 -->
 
 # Tags

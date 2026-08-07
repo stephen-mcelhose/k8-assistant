@@ -5,7 +5,7 @@ This wiki is maintained by an LLM using the llm-wiki skill
 
 ## Domain
 
-Knowledge base for the **k8s-assistant** csgdaa-code skill. Covers:
+Knowledge base for the **k8s-assistant** skill. Covers:
 
 - Kubernetes concepts, resources, and kubectl commands (from official kubernetes.io tutorials)
 - Skill design principles — how the assistant is structured, its pedagogical approach, security surface
@@ -83,7 +83,7 @@ an attribution header with the source URL and fetch date. See `docs/wiki/raw/LIC
 Planned raw sources:
 - `raw/tutorials/` — one file per kubernetes.io tutorial (fetched by the sync plan)
 - `tools/extract.py` — reusable extraction script: curl → strip tags → write attribution header
-- `raw/pr-notes.md` → `docs/pr-notes.md` (original analysis from csgdaa-skills PR #16)
+- `raw/manual/` — manually authored reference files (tag taxonomy, etc.)
 
 **Version control**: raw files are committed to git to enable the quarterly diff/sync
 strategy (re-fetch → diff against stored snapshot → re-ingest if changed). A
