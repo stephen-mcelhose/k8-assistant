@@ -2,14 +2,14 @@
 type: concept
 title: Learning Aid Rubric
 description: A 6-criterion, 100-point pedagogical scoring framework for evaluating the k8s-assistant skill's effectiveness as a learning tool for developers and novice DevOps engineers.
-resource: docs/pr-notes.md
+resource: docs/wiki/skill-design-principles.md
 tags: [pedagogy, evaluation, learning, rubric, scoring]
 timestamp: 2026-08-07T15:39:38Z
 ---
 
 # Learning Aid Rubric
 
-A rubric proposed during the original skill review (csgdaa-skills PR #16) to evaluate the k8s-assistant as a pedagogical tool. It targets developers and novice DevOps engineers learning Kubernetes deployment troubleshooting.
+A rubric for evaluating the k8s-assistant as a pedagogical tool. It targets developers and novice DevOps engineers learning Kubernetes deployment troubleshooting.
 
 This rubric serves two purposes:
 1. **Retrospective** — score the current skill against each criterion to find gaps
@@ -47,4 +47,4 @@ Scores are 1–4 per criterion, multiplied by weight, summed to 100.
 
 ## Sources
 
-- `docs/pr-notes.md` — rubric originally proposed in a comment on csgdaa-skills PR #16
+- `docs/wiki/skill-design-principles.md` — design decisions that informed this rubric

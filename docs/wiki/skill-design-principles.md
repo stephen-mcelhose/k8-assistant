@@ -2,7 +2,7 @@
 type: concept
 title: Skill Design Principles
 description: The design intent behind k8s-assistant — the novel environment framing, discover-then-guide workflow, and pedagogical choices that shape the skill's behaviour.
-resource: docs/pr-notes.md
+resource: skill/SKILL.md
 tags: [skill-design, pedagogy, architecture, workflow, environment-discovery]
 timestamp: 2026-08-07T15:39:38Z
 ---
@@ -58,5 +58,4 @@ The `## Post-Condition` step — a concise recap of all concepts and resources e
 
 ## Sources
 
-- `docs/pr-notes.md` — design notes and review comments from csgdaa-skills PR #16
-- `SKILL.md` — the skill definition itself
+- `skill/SKILL.md` — the skill definition itself

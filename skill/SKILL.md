@@ -62,12 +62,11 @@ Align the user's request with available tutorials through exploration.
 - **For complex tasks**: Provide a step-by-step walkthrough, explaining the "why" behind each command.
 
 ### 4. Reference Usage
-- Use `references/quick-reference.md` for common `kubectl` command patterns.
+- Use `kubectl explain <resource>` and `kubectl <command> --help` for command patterns.
 - Emphasize understanding resource configurations using `kubectl get <type> <name> -o yaml`.
 
 ## Post-Condition
 When ending the session, provide a concise recap of all concepts and resources explored.
 
 ## References
-- `references/quick-reference.md`: Common kubectl commands and resource types.
-- `references/tutorial-map.md`: Mapping of modules to official Kubernetes tutorials with context scores.
+- `references/tutorial-map.md`: Mapping of modules to official Kubernetes tutorials.
