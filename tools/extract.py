@@ -3,10 +3,10 @@
 extract.py — fetch a kubernetes.io tutorial page and write verbatim plain text to raw/tutorials/
 
 Usage:
-    python3 docs/wiki/raw/extract.py <URL> <slug>
+    python3 tools/extract.py <URL> <slug>
 
 Example:
-    python3 docs/wiki/raw/extract.py \
+    python3 tools/extract.py \
         https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/ \
         deploy-app
 
@@ -95,7 +95,7 @@ def main():
         sys.exit(1)
 
     url, slug = sys.argv[1], sys.argv[2]
-    out_dir = Path(__file__).parent / "tutorials"
+    out_dir = Path(__file__).parent.parent / "docs" / "wiki" / "raw" / "tutorials"
 
     print(f"Fetching {url} …", file=sys.stderr)
     html = fetch_html(url)

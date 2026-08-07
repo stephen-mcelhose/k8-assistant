@@ -36,7 +36,7 @@ Run these via the `llm-wiki` skill from within `~/repos/k8-assistant`:
 For each tutorial ingest from `docs/wiki/tutorial-sync-plan.md`, follow this sequence:
 
 1. **Fetch verbatim source** — `curl -s <URL>` to a temp file, then run the extraction
-   script (`docs/wiki/raw/extract.py`) to pull the `<main data-pagefind-body>` element,
+   script (`tools/extract.py`) to pull the `<main data-pagefind-body>` element,
    strip all HTML tags and inline scripts, and write plain text to
    `docs/wiki/raw/tutorials/<slug>.md` with an attribution header.
    This is the **only** write to `raw/` — it is immutable after this step.
@@ -82,7 +82,7 @@ an attribution header with the source URL and fetch date. See `docs/wiki/raw/LIC
 
 Planned raw sources:
 - `raw/tutorials/` — one file per kubernetes.io tutorial (fetched by the sync plan)
-- `raw/extract.py` — reusable extraction script: curl → strip tags → write attribution header
+- `tools/extract.py` — reusable extraction script: curl → strip tags → write attribution header
 - `raw/pr-notes.md` → `docs/pr-notes.md` (original analysis from csgdaa-skills PR #16)
 
 **Version control**: raw files are committed to git to enable the quarterly diff/sync
