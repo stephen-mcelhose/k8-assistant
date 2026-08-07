@@ -23,3 +23,7 @@
 | [[pod-sidecar-containers]]                                | Native sidecar containers (initContainer + restartPolicy:Always); adoption guide and webhook pitfalls | sidecar, init-containers, jobs        |
 | [[basic-stateful-set]]                                    | StatefulSet full lifecycle: stable identity, ordered ops, PVC persistence, partitioned rolling update | statefulset, pvc, headless-service    |
 | [[cassandra]]                                             | 3-node Cassandra ring via StatefulSet; custom seed provider; nodetool validation; PVC cleanup         | cassandra, statefulset, distributed   |
+| [[create-cluster]]                                        | Kubernetes cluster model: control plane vs nodes, kubelet, minikube start                             | cluster, minikube, control-plane, node |
+| [[mysql-wordpress-persistent-volume]]                     | WordPress+MySQL via Kustomize; Secret generator; Recreate strategy; PVCs; kubectl apply -k            | kustomize, pvc, secret, wordpress      |
+| [[pods-and-endpoint-termination-flow]]                    | Pod termination + EndpointSlice conditions (ready/serving/terminating); connection draining            | termination, endpointslice, prestop    |
+| [[source-ip]]                                             | Source IP NAT behaviour per Service type; externalTrafficPolicy:Local; healthCheckNodePort            | source-ip, nat, kube-proxy, nodeport   |

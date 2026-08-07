@@ -119,6 +119,10 @@ When a user asks about a topic, the skill checks which tags match, then looks up
 | `sidecar`, `init-containers`, `restart-policy`, `jobs` | [[pod-sidecar-containers]] |
 | `statefulset`, `pvc`, `headless-service`, `partition`, `ordered` | [[basic-stateful-set]] |
 | `cassandra`, `statefulset`, `seed-provider`, `distributed` | [[cassandra]] |
+| `cluster`, `minikube`, `control-plane`, `node`, `kubelet` | [[create-cluster]] |
+| `kustomize`, `pvc`, `secret`, `recreate`, `wordpress`, `mysql` | [[mysql-wordpress-persistent-volume]] |
+| `termination`, `graceful-shutdown`, `endpointslice`, `prestop` | [[pods-and-endpoint-termination-flow]] |
+| `source-ip`, `nat`, `kube-proxy`, `external-traffic-policy` | [[source-ip]] |
 
 ## Sources
 
