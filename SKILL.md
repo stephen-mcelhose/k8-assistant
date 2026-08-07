@@ -1,7 +1,16 @@
 ---
 name: k8s-assistant
-description: "Progressively help a user learn Kubernetes in a novel environment by exploring the environment and establishing learning objectives that align with user's ask and official tutorials."
+description: "Interactive Kubernetes learning assistant that explores the user's live cluster environment and guides them through official kubernetes.io tutorials step by step. Use this skill whenever the user wants to learn Kubernetes, run kubectl commands, understand k8s resources (pods, deployments, services, etc.), troubleshoot a cluster, follow a k8s tutorial, or asks anything about Kubernetes — even if they don't use the word 'skill'."
 version: "1.0.0"
+license: MIT
+tags:
+  - kubernetes
+  - kubectl
+  - k8s
+  - learning
+  - tutorial
+  - cluster
+  - devops
 allowed-tools:
   - Bash(kubectl get:*)
   - Bash(kubectl describe:*)
