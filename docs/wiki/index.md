@@ -27,3 +27,7 @@
 | [[mysql-wordpress-persistent-volume]]                     | WordPress+MySQL via Kustomize; Secret generator; Recreate strategy; PVCs; kubectl apply -k            | kustomize, pvc, secret, wordpress      |
 | [[pods-and-endpoint-termination-flow]]                    | Pod termination + EndpointSlice conditions (ready/serving/terminating); connection draining            | termination, endpointslice, prestop    |
 | [[source-ip]]                                             | Source IP NAT behaviour per Service type; externalTrafficPolicy:Local; healthCheckNodePort            | source-ip, nat, kube-proxy, nodeport   |
+| [[apparmor]]                                              | Load AppArmor profiles onto nodes; securityContext.appArmorProfile; violation and missing-profile behavior | apparmor, security-context, linux  |
+| [[seccomp]]                                               | seccomp profiles via kind extraMounts; audit→violation→fine-grained progression; RuntimeDefault default | seccomp, syscall, kind, linux         |
+| [[provision-swap-memory]]                                 | Encrypted/unencrypted swap on Linux nodes; kubelet LimitedSwap config; boot persistence via systemd   | swap, kubelet, kubeadm, memory        |
+| [[zookeeper]]                                             | 3-node ZooKeeper ensemble; PodAntiAffinity + PDB for quorum safety; liveness probes; cordon/drain     | zookeeper, pdb, podantiaffinity       |

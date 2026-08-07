@@ -123,6 +123,10 @@ When a user asks about a topic, the skill checks which tags match, then looks up
 | `kustomize`, `pvc`, `secret`, `recreate`, `wordpress`, `mysql` | [[mysql-wordpress-persistent-volume]] |
 | `termination`, `graceful-shutdown`, `endpointslice`, `prestop` | [[pods-and-endpoint-termination-flow]] |
 | `source-ip`, `nat`, `kube-proxy`, `external-traffic-policy` | [[source-ip]] |
+| `apparmor`, `security-context`, `linux`, `kernel`, `profile` | [[apparmor]] |
+| `seccomp`, `syscall`, `security-context`, `runtime-default`  | [[seccomp]] |
+| `swap`, `kubelet`, `kubeadm`, `linux`, `memory`, `node`      | [[provision-swap-memory]] |
+| `zookeeper`, `poddisruptionbudget`, `podantiaffinity`, `quorum` | [[zookeeper]] |
 
 ## Sources
 
