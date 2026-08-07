@@ -1,1 +1,3 @@
-.agents/
+.agents/permissions.json
+.agents/skills.json
+.agents/skills.lock
